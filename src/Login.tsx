@@ -10,11 +10,11 @@ export const Login = () => {
     const state = generateRandomString(32);
     localStorage.setItem('auth_state', state);
 
-    const clientId = 'test-client-id'; 
-    const redirectUri = 'http://localhost:3001/callback';
+    const clientId = import.meta.env.VITE_CLIENT_ID; 
+    const redirectUri = import.meta.env.VITE_REDIRECT_URI;
     const scope = 'read';
 
-    const authUrl = new URL('http://localhost:3000/authorize');
+    const authUrl = new URL(import.meta.env.VITE_AUTH_URL);
     authUrl.searchParams.append('response_type', 'code');
     authUrl.searchParams.append('client_id', clientId);
     authUrl.searchParams.append('redirect_uri', redirectUri);

@@ -11,7 +11,7 @@ export const refreshAccessToken = async (): Promise<string | null> => {
     const response = await api.post('/token', new URLSearchParams({
       grant_type: 'refresh_token',
       refresh_token: refreshToken,
-      client_id: 'test-client-id',
+      client_id: import.meta.env.VITE_CLIENT_ID,
     }));
 
     const { access_token, refresh_token: new_refresh_token } = response.data;

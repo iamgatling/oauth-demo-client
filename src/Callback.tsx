@@ -33,8 +33,8 @@ export const Callback = () => {
         const response = await api.post('/token', new URLSearchParams({
           grant_type: 'authorization_code',
           code,
-          redirect_uri: 'http://localhost:3001/callback',
-          client_id: 'test-client-id',
+          redirect_uri: import.meta.env.VITE_REDIRECT_URI,
+          client_id: import.meta.env.VITE_CLIENT_ID,
           code_verifier: codeVerifier,
         }));
 
