@@ -2,7 +2,7 @@
 
 A React SPA demonstrating integration with an OAuth 2.0 Authorization Server using **Authorization Code + PKCE** flow.
 
-> **Note**: This is an example client for testing and learning purposes. It demonstrates how to integrate with the [OAuth2 Authorization Server](https://github.com/iamgatling/Pre-oauth).
+> **Note**: This is an example client for testing and learning purposes. It demonstrates how to integrate with the [OAuth2 Authorization Server](https://github.com/iamgatling/oauth-minimal).
 
 ---
 
@@ -143,7 +143,7 @@ This demo uses `localStorage` for simplicity. In production, implement proper to
 
 ## Related
 
-- [OAuth2 Authorization Server](https://github.com/iamgatling/Pre-oauth) — The backend this client authenticates with
+- [OAuth2 Authorization Server](https://github.com/iamgatling/oauth-minimal) — The backend this client authenticates with
 
 ---
 
